@@ -1,0 +1,11 @@
+{
+    "ofertas": [
+        {
+            "nombre": "Año Nuevo en Paris",
+            "precio": "5.000usd",
+            "fecha_inicio": "26/12/23",
+            "fecha_fin": "2/01/24",
+            "imagen": "img/paris_anio_nuevo.jpg"
+        }
+    ]
+}

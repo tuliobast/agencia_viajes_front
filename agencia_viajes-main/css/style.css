@@ -1,0 +1,367 @@
+/*Selector global*/
+*{
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+
+/* Selector de tipo header*/
+header{
+    width: 100vw;
+    height: 100px;
+    border-bottom-style:solid;
+    border-bottom-width: thin;
+    overflow-y: visible;
+    position: relative;
+    z-index: 10;
+}
+
+footer{
+    background-color: #000000;
+    width: 100vw;
+    height: auto;
+}
+
+.socialmedia{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialmedia * img{
+    width: 30px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.medios_pago img{
+    width: 40px;
+    height: auto;
+}
+
+footer h2{
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+footer * ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer * p, li{
+    font-family:'Ubuntu';
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.medios_pago{
+    display: flex;
+}
+
+/* Selector para la clase navbar*/
+.navbar{
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+    position: absolute;
+}
+
+/*Selector de las opciones de menú*/
+.nav-link{
+    color: #006175;
+    text-decoration: none;
+    font-family: 'Federo';
+    font-weight: bold;
+}
+
+/*Selector para botón de collapse menú*/
+.navbar-toggler{
+    margin-left: 60%;
+}
+
+/*Selector para botón de logo*/
+.logo{
+    width: 80px;
+    height: auto;
+}
+
+/*Selector para headers de sección main*/
+div h1{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0px 20px 0px;
+    border-bottom-style: solid;
+    border-color: rgb(158,193,215);
+    border-width: thin;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    color:rgb(213,139,115);
+    font-family: 'Yesteryear';
+}
+
+/*Establece los márgenes para el carrusel de fotos de nuevos destinos*/
+.carousel{
+    margin: 20px 10px 20px 10px;
+}
+
+/*Establece el estilo para la descripción de los ítems del carrusel de nuevos destinos*/
+.carousel-item * h5, p{
+    color: rgb(239,241,238);
+    font-family: 'Merienda';
+}
+
+/*Overlay para oscurecer con un gradiente las fotos del carrusel de nuevos destinos*/
+.carousel-overlay:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:linear-gradient(rgb(158,193,215,0.5),rgba(0,0,0,0.7));
+}
+
+form label{
+    color: #006175;
+    font-size: 1rem;
+    font-family: 'Ubuntu';
+}
+
+.control_form{
+    display: block;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+select option{
+    font-size: 0.8rem;
+    color: #495057;
+    font-family: 'Ubuntu';
+}
+
+.contenedor_enviar{
+    display: flex;
+    margin:30px;
+    justify-content: center;
+}
+
+.boton_enviar{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #006175;
+    font-family: 'Ubuntu';
+    background-color:#ffffff;
+    border-color: #495057;
+    border-style: solid;
+    border-width: thin;
+}
+
+.card{
+    border-color: rgb(158,193,215);
+}
+
+.card * h5 {
+    font-family: 'Ubuntu';
+    color: #495057;
+}
+
+.card * p {
+    font-family: 'Ubuntu';
+    color: #006175;
+}
+
+.card_img_container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+}
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+#homelogo{
+    width:90px;
+    position:fixed;
+    bottom: 20px;
+    right: 0px;
+    z-index:10;
+}
+
+#clima{
+    width: 90px;
+    display: block;
+    position:fixed;
+    top: 110px;
+    right: 0px;
+    z-index:10;
+    align-content: center;
+}
+
+#clima > img{
+    object-fit:fill;
+    width: 90px;
+}
+
+#clima > p{
+    color:#006175;
+    text-align: center;
+    margin:0px;
+}
+
+.container-cuerpo{
+    position: relative;
+    margin: 20px;
+}
+
+aside {
+    border-style: solid;
+    padding-top: 20px;
+    border-color: #495057;
+    border-width: thin;
+}
+
+aside select, input{
+    font-size: 0.8rem;
+}
+
+#texto-paquete, #texto-oferta{
+    color:#000000;
+    font-family:'Ubuntu';
+}
+
+#valor-oferta, #valor-paquete{
+    margin-top: 20px;
+    color:#006175;
+    font-family:'Ubuntu';
+    font-style: italic;
+}
+
+#img-oferta, #img-paquete{
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .control_form{
+        font-size: 0.8rem;
+    }
+
+    form>label{
+        font-size: 0.8;
+    }
+}
+
+
+/*Media query que modifica el css para dispositivos de menos de 768px de ancho*/
+@media only screen and (max-width: 767px) {
+    
+    header{
+        width: 100vw;
+    }   
+
+    /*Quita el margen al botón de dropdown*/
+    .navbar-toggler{
+        margin-left: 0%;
+    }
+
+    /*Reduce el tamaño del logo*/
+    .logo{
+        width: 50px;
+        height: auto;
+    }
+
+    /*Establece las características para el drodown menú*/
+    .navbar-collapse{
+        position: relative;
+        top:30px !important;
+        background-color: rgba(239,241,238,0.8);
+    }
+
+    #clima{
+        width: 50px;
+        display: block;
+        position:fixed;
+        top: 110px;
+        right: 0px;
+        z-index:10;
+        align-content: center;
+    }
+    
+    #clima > img{
+        object-fit:fill;
+        width: 50px;
+    }
+
+    
+    #clima > p{
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    /*Reducción de los tamaños de fuente*/
+    div h1{
+        font-size: 1.5rem;
+    }
+
+    .nav-link{
+        font-size: 0.5rem;
+    }
+
+    footer h2{
+        font-size: 1.2rem;
+    }
+
+    footer * p, li{
+        font-size: 0.6rem;
+    }
+
+    .socialmedia * img{
+        width: 20px;
+        height: auto;
+    }
+    
+    .medios_pago img{
+        width: 20px;
+        height: auto;
+    }
+
+    .socialmedia{
+        display: flex;
+        justify-content:center;
+    }
+
+    .card * h5 {
+        font-size: 0.8rem;
+    }
+
+    #homelogo{
+        width:50px;
+        position:fixed;
+        bottom: 20px;
+        right: 0px;
+        z-index:10;
+    }
+
+}
